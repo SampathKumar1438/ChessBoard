@@ -1,0 +1,3 @@
+## 2024-07-26 - Improving Image and Table Accessibility
+**Learning:** Adding descriptive `alt` text to images improves the experience for users with visual impairments by providing context when images cannot be displayed. Furthermore, correctly utilizing semantic HTML, such as `<caption>` for table titles and `scope="col"` on header cells (`<th>`), significantly enhances navigation and comprehension for screen reader users compared to arbitrary tags.
+**Action:** Always ensure that informative images have descriptive `alt` text related to their content. For tabular data, properly structure tables with `<caption>` for titles and explicitly define header scopes (`col` or `row`) to maximize assistive technology support.
