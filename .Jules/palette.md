@@ -1,0 +1,3 @@
+## 2024-07-24 - Table Accessibility
+**Learning:** Layout tables (like the chessboard grid) add unnecessary noise to screen readers, announcing rows and columns without semantic meaning. Data tables require proper captioning and column headers associations for navigation.
+**Action:** Use `role="presentation"` on pure layout tables to suppress screen reader table semantics, and always use semantically valid `<caption>` and `scope="col"`/`scope="row"` attributes for true data tables.
