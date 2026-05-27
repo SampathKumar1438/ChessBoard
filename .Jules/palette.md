@@ -1,0 +1,3 @@
+## 2024-07-06 - Layout Tables and Semantic Markup
+**Learning:** This application relies on `table` elements for layout (e.g., chessboard) without proper ARIA roles (like `role="presentation"`), causing screen readers to incorrectly announce them as data tables. It also features incorrectly used table structure elements, like `<th>` tags directly inside `<table>` serving as pseudo-captions.
+**Action:** When working on HTML files in this project, proactively check `table` elements. Add `role="presentation"` to layout tables to hide them from screen readers, and convert pseudo-captions like standalone `<th>` elements into proper semantic `<caption>` tags.
