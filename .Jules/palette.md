@@ -1,0 +1,3 @@
+## 2024-05-17 - Table Accessibility Enhancements
+**Learning:** This static HTML project uses tables for layout purposes (like the chessboard) and sometimes uses incorrect table structure elements like standalone `<th>` tags instead of semantic `<caption>` tags for table titles.
+**Action:** Always add `role="presentation"` to tables used purely for layout to prevent screen readers from announcing them as complex data tables. Ensure proper semantic structure by replacing standalone `<th>` tags outside of rows with proper `<caption>` elements for data tables.
