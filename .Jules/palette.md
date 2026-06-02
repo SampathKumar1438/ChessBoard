@@ -1,0 +1,3 @@
+## 2026-06-02 - Table Semantics and Accessibility
+**Learning:** The project's HTML code pattern sometimes uses tables for purely visual layout purposes (like the chessboard) without the necessary `role="presentation"`. It also uses incorrect table structure elements, such as standalone `<th>` tags directly inside a `<table>` instead of semantic `<caption>` tags for table titles.
+**Action:** Always check `<table>` elements in this project. If they are used for layout, add `role="presentation"`. Ensure that table titles use semantic `<caption>` tags and avoid standalone `<th>` elements outside of `<tr>` tags.
