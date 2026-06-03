@@ -1,0 +1,3 @@
+## 2024-07-25 - Table Layout and Semantic Accessibility
+**Learning:** Using `role="presentation"` helps screen readers ignore structural tables that are used solely for visual layout (like a chessboard grid), and using `<caption>` instead of a standalone `<th>` provides a proper semantic title for data tables.
+**Action:** When inspecting legacy HTML projects, verify that layout tables are hidden from screen readers with `role="presentation"` and that data tables use standard, semantic structural elements like `<caption>`.
