@@ -1,0 +1,3 @@
+## 2024-05-18 - Semantic Tables and Layout Tables Accessibility
+**Learning:** Tables are sometimes incorrectly used for visual layouts instead of tabular data (e.g., a chessboard). This confuses screen readers which expect semantic table structures like captions, headers, and rows. Additionally, when using actual data tables, using a standalone `<th>` instead of a semantic `<caption>` fails to properly label the table for assistive technologies.
+**Action:** Always add `role="presentation"` to `<table >` elements used purely for visual layout. Ensure genuine data tables use proper semantic tags like `<caption>` to identify them clearly, replacing standalone `<th>` elements functioning as table titles.
