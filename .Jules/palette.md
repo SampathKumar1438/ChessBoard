@@ -1,0 +1,3 @@
+## 2026-06-06 - Semantic Table Markup
+**Learning:** Tables used purely for layout (like a chessboard grid) are read incorrectly by screen readers, causing confusion. Using `role="presentation"` disables the semantic meaning of the table to screen readers. Data tables should use proper caption elements (`<caption>`) rather than standalone table headers (`<th>`) outside of standard table rows to ensure the table title is properly associated with the table content.
+**Action:** Always add `role="presentation"` to layout tables, and use `<caption>` instead of `<th>` for table titles.
