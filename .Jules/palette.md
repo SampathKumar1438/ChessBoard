@@ -1,0 +1,3 @@
+## 2024-05-18 - Semantic Tables vs Layout Tables
+**Learning:** Legacy HTML patterns often misuse `<th>` for table captions, which breaks screen reader expectations. Additionally, tables used purely for visual grids (like a chessboard) require `role="presentation"` so assistive technologies don't announce them as data tables.
+**Action:** Always use semantic `<caption>` tags for table titles instead of orphaned `<th>` tags, and ensure `role="presentation"` is added to any `<table` used strictly for visual layout.
