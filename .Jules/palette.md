@@ -1,0 +1,3 @@
+## 2025-01-20 - Table Accessibility
+**Learning:** This project's HTML code pattern sometimes uses tables for layout, which requires `role="presentation"` to hide table semantics from screen readers. It also incorrectly uses standalone `<th>` tags for table titles instead of semantic `<caption>` tags.
+**Action:** Added `role="presentation"` to layout tables (like the chessboard) and replaced standalone `<th>` titles with semantic `<caption>` tags to improve screen reader experience.
