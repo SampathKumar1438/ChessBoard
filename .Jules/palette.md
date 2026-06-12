@@ -1,0 +1,3 @@
+## 2024-07-25 - Improve Table Accessibility and Semantic Structure
+**Learning:** Tables used purely for visual layout (like a chessboard) should have `role="presentation"` so screen readers do not announce them as complex data tables. Data tables should use the semantic `<caption>` tag instead of a standalone `<th>` element outside of a `<tr>` for the table title to ensure proper interpretation by assistive technologies.
+**Action:** Added `role="presentation"` to layout tables and replaced standalone `<th>` tags used as titles with semantic `<caption>` tags.
