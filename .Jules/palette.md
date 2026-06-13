@@ -1,0 +1,3 @@
+## 2026-06-13 - [Table Layout and Semantic Captioning]
+**Learning:** Tables used purely for visual layout need `role="presentation"` to prevent screen readers from interpreting them as data tables. Furthermore, standalone `<th>` tags meant to serve as titles should correctly be `<caption>` elements for proper structural accessibility.
+**Action:** Always verify if a table in the codebase is used for layout vs data. Apply `role="presentation"` for layout tables, and fix standalone `<th>` structural errors by using semantic `<caption>` tags.
