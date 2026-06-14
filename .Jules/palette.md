@@ -1,0 +1,3 @@
+## 2024-06-14 - Improve Table Accessibility with Semantic Structure and Roles
+**Learning:** Tables used purely for visual layouts confuse screen readers unless explicitly marked with `role="presentation"`. Additionally, standalone `<th>` elements outside of row headers or incorrectly used for titles cause structural accessibility issues, whereas `<caption>` should be used for data table titles.
+**Action:** Always add `role="presentation"` to layout-only tables (like the chessboard grid) and replace incorrectly used `<th>` elements functioning as titles with semantic `<caption>` elements for data tables (like the timetable).
