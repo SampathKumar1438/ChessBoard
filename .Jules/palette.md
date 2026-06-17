@@ -1,0 +1,3 @@
+## 2026-06-17 - Table Semantics and Presentation Roles
+**Learning:** Tables used purely for visual layout (like a chessboard) need `role="presentation"` so screen readers ignore their semantic table structure. Conversely, data tables (like timetables) should use semantic tags like `<caption>` instead of standalone header tags (`<th>`) for their title to maintain proper accessibility structure.
+**Action:** Always verify table usage. If used for layout, add `role="presentation"`. If used for data, ensure proper semantic elements like `<caption>`, `<thead>`, `<tbody>`, and `<th>` are used correctly.
