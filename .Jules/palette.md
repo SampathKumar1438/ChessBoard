@@ -1,0 +1,3 @@
+## 2024-06-18 - Semantic Tables and Layout Tables
+**Learning:** Found instances of tables being used for layout (chessboard) missing the `role="presentation"` attribute, and structural tables (timetable) incorrectly using a standalone `<th>` instead of a semantic `<caption>` for their title. This pattern hinders screen reader navigation and understanding.
+**Action:** Applied `role="presentation"` to layout-specific tables to hide them from the accessibility tree, and replaced standalone `<th>` elements functioning as table titles with semantic `<caption>` elements to ensure proper association for assistive technologies.
