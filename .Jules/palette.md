@@ -1,0 +1,3 @@
+## 2024-06-22 - Semantic HTML for Screen Readers
+**Learning:** This app uses tables for both layout (like the ChessBoard) and data (like the timetable). Layout tables confuse screen readers by treating purely visual structure as data, while data tables without semantic elements like `<caption>` miss opportunities to clearly define the table's purpose.
+**Action:** Added `role="presentation"` to layout tables to instruct screen readers to ignore their table semantics, and replaced standalone `<th>` elements functioning as titles with semantic `<caption>` tags for actual data tables. Always distinguish between presentation and data tables!
