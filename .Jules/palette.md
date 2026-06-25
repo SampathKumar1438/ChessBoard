@@ -1,0 +1,3 @@
+## 2024-07-06 - Improve Semantic Structure and Accessibility of Tables
+**Learning:** Found instances of tables being used for visual layout without the proper `role="presentation"` attribute, which can be confusing for screen reader users. Also noticed the incorrect usage of standalone `<th>` elements instead of semantic `<caption>` tags for table titles.
+**Action:** When evaluating tables in the UI, check if they are for data or layout. For layout tables, ensure `role="presentation"` is applied. For data tables with titles, ensure `<caption>` is used instead of incorrectly placed heading tags.
