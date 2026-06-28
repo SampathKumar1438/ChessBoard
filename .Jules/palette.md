@@ -1,0 +1,3 @@
+## 2024-07-26 - Table Accessibility and Semantics
+**Learning:** Tables used purely for layout in legacy code lack context for screen readers. Using `role="presentation"` on these layout tables prevents assistive technologies from interpreting them as data tables. Furthermore, standalone `<th>` elements used as titles for actual data tables create invalid HTML structure and a poor screen reader experience.
+**Action:** Always add `role="presentation"` to visual layout tables like chessboards. Ensure real data tables use the semantic `<caption>` element for titles rather than misusing table header `<th>` tags.
