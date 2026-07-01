@@ -1,0 +1,3 @@
+## 2024-05-24 - HTML Structural Validation for Tables
+**Learning:** Encountered invalid structural HTML elements in tables across the project, such as standalone `<th>` elements functioning as captions. These elements disrupt the semantics and expected layout for screen readers. In addition, some tables were used purely for layout design without proper aria roles.
+**Action:** When finding invalid structure like a standalone `<th>` acting as a table title, properly convert it to `<caption>`. Additionally, when a table is used strictly for design, add `role="presentation"` to effectively strip its tabular semantics for screen reader users.
