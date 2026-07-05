@@ -1,0 +1,3 @@
+## 2024-06-25 - Improve table semantics and accessibility
+**Learning:** Tables used purely for visual layout (like a chessboard) should have `role="presentation"` to avoid confusing screen readers with meaningless row/column data. Also, direct children of a `<table>` tag acting as a title should be properly wrapped in a semantic `<caption>` instead of a standalone `<th>` element.
+**Action:** Always check the HTML structure for tables. If they are used strictly for styling/layout, ensure `role="presentation"` is applied. If tables are used for data but contain incorrect standalone header components as titles, replace them with proper semantic HTML tags like `<caption>`.
