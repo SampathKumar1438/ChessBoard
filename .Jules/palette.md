@@ -1,0 +1,3 @@
+## 2024-07-06 - Table Accessibility and Semantic Structure
+**Learning:** Tables used purely for layout cause accessibility issues as screen readers will interpret them as complex data tables. Layout tables require `role="presentation"`. For actual data tables, `<caption>` should be used instead of standalone `<th>` elements outside the row structure for semantic correctness and better screen reader support.
+**Action:** When encountering tables in this repository, always evaluate if they are for layout or data. Add `role="presentation"` for layout tables, and ensure data tables use proper semantic elements like `<caption>` instead of isolated `<th>` tags.
